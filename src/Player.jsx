@@ -7,6 +7,7 @@ import {
   AiOutlineFullscreen,
   AiOutlineFullscreenExit,
 } from "react-icons/ai";
+import "./index.css";
 
 const Player = ({ source, width = 100, loop = false }) => {
   const videoRef = useRef(null);
