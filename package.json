@@ -1,0 +1,22 @@
+{
+  "name": "next-js-player",
+  "version": "1.0.6",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx babel src --out-dir dist"
+  },
+  "keywords": [
+    "next-js-player"
+  ],
+  "author": "Chinmaya Sa",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "react-icons": "^4.9.0",
+    "tailwindcss": "^3.3.2"
+  }
+}
