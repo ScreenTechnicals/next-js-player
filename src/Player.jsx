@@ -7,11 +7,13 @@ import {
   AiOutlineFullscreen,
   AiOutlineFullscreenExit,
 } from "react-icons/ai";
+import { useRouter } from "next/navigation";
 
 const Player = ({ source, width = 100, loop = false }) => {
   const videoRef = useRef(null);
   const inputRef = useRef(null);
   const wraperRef = useRef(null);
+  const router = useRouter();
   const [isplaying, setIsplaying] = useState(false);
   const [currentSpeed, setCurrentSpeed] = useState("1.0");
   const [playbackToggle, setPlaybackToggle] = useState(false);
@@ -102,7 +104,7 @@ const Player = ({ source, width = 100, loop = false }) => {
         ref={videoRef}
         className="w-full"
       ></video>
-      <div className=" absolute w-full video-wraper h-[20px] bottom-0 left-0 sm:p-5  flex items-center justify-center">
+      <div className=" absolute w-full video-wraper h-[70px] bottom-0 left-0 sm:p-5  flex items-center justify-center">
         <div className="relative w-full  transition-all duration-500 player-controls">
           <div className="absolute w-full bottom-0 flex bg-gradient-to-t from-[#000000ad] to-[#0000] items-center justify-between  space-x-2">
             {!isplaying ? (
