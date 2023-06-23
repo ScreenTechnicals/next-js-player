@@ -9,7 +9,6 @@ exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 var _bs = require("react-icons/bs");
 var _ai = require("react-icons/ai");
-require("./index.css");
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -113,7 +112,7 @@ var Player = function Player(_ref) {
   }
   return /*#__PURE__*/_react.default.createElement("div", {
     ref: wraperRef,
-    className: "text-white overflow-hidden shadow-xl relative video-wraper flex items-center justify-center",
+    className: "text-white overflow-hidden shadow-xl relative flex items-center justify-center",
     style: {
       width: width + "%"
     }
@@ -127,7 +126,11 @@ var Player = function Player(_ref) {
     ref: videoRef,
     className: "w-full"
   }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "absolute w-full  left-0 p-2 sm:p-5 bg-gradient-to-t from-[#000000ad] to-[#0000] flex items-center justify-between player-controls transition-all duration-500 space-x-2"
+    className: " absolute w-full video-wraper h-[20px] bottom-0 left-0 sm:p-5  flex items-center justify-center"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "relative w-full  transition-all duration-500 player-controls"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "absolute w-full bottom-0 flex bg-gradient-to-t from-[#000000ad] to-[#0000] items-center justify-between  space-x-2"
   }, !isplaying ? /*#__PURE__*/_react.default.createElement("button", {
     className: "text-3xl text-white",
     onClick: function onClick() {
@@ -236,7 +239,7 @@ var Player = function Player(_ref) {
       setIsFullscreen(true);
       openFullscreen();
     }
-  }, /*#__PURE__*/_react.default.createElement(_ai.AiOutlineFullscreen, null))));
+  }, /*#__PURE__*/_react.default.createElement(_ai.AiOutlineFullscreen, null))))));
 };
 var _default = Player;
 exports.default = _default;
