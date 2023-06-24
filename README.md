@@ -148,4 +148,4 @@ export default function Home() {
 
 # Versions
 
-**v1.1.7** : This is the currently the stable version that you can use.
+**v1.1.8** : This is the currently the stable version that you can use.
