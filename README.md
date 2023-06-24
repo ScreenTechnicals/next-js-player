@@ -8,7 +8,7 @@
 
 ## Github
 
-[Contribut On Github](https://github.com/ScreenTechnicals/next-js-player/)
+[Contribut On Github](https://github.com/ScreenTechnicals/next-video-player/)
 
 ## Stacks
 
@@ -145,7 +145,3 @@ export default function Home() {
 | string | source | <url> or locale source of the video |  
 | number | width | <value in %> and by default value is 100% |  
 | boolean | loop | by default false |
-
-# Versions
-
-**v1.1.8** : This is the currently the stable version that you can use.
