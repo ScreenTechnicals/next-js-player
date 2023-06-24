@@ -22,10 +22,22 @@
 npm i next-js-player
 ```
 
+or
+
+```
+yarn add next-js-player
+```
+
 2. Run the command below to install react-icons
 
 ```
 npm i react-icons
+```
+
+or
+
+```
+yarn add react-icons
 ```
 
 3. Run the command below to install tailwindcss, if not installed
@@ -33,6 +45,13 @@ npm i react-icons
 ```
 npm install -D tailwindcss
 npx tailwindcss init
+```
+
+or
+
+```
+yarn add -D tailwindcss
+yarn tailwindcss init
 ```
 
 ## Configurations
@@ -129,4 +148,4 @@ export default function Home() {
 
 # Versions
 
-**v1.1.4** : This is the currently the stable version that you can use.
+**v1.1.7** : This is the currently the stable version that you can use.
