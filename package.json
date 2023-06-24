@@ -1,6 +1,6 @@
 {
-  "name": "next-video-player",
-  "version": "0.0.1",
+  "name": "next-js-player",
+  "version": "1.2.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
